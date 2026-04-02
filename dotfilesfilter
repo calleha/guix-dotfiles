@@ -1,0 +1,16 @@
++ etc
++ etc/config.scm
++ etc/signing-key.pub
++ home
++ home/calleha
++ home/calleha/.emacs.d
++ home/calleha/.emacs.d/init.el
++ home/calleha/.emacs.d/custom-set-variables.el
++ home/calleha/.emacs.d/Spacemacs-ish-theme.el
++ home/calleha/.config
++ home/calleha/.config/guix
++ home/calleha/.config/guix/channels.scm
++ home/calleha/.config/mpv/
++ home/calleha/.config/mpv/**
++ home/calleha/.bashrc
+- *
