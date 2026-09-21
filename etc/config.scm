@@ -43,7 +43,7 @@
 		   emacs-gptel emacs-multiple-cursors emacs-which-key emacs-vertico emacs-corfu
 		   emacs-pdf-tools emacs-vterm emacs-sudo-edit emacs-avy emacs-god-mode
 		   emacs-magit emacs-iedit emacs-gnuplot emacs-dmenu emacs-pinentry emacs-caps-lock
-		   emacs-emms emacs-transmission emacs-paredit emacs-bluetooth
+		   emacs-emms emacs-transmission emacs-paredit emacs-bluetooth emacs-agent-shell
 		   ;; not available/working
 		   ;emacs-exwm-modeline emacs-aider emacs-addressbook-bookmark emacs-zygospore
 		   iwd
@@ -74,7 +74,7 @@
 		 (service upower-service-type
 			  (upower-configuration
 			   (percentage-action 5)
-			   (critical-power-action 'hibernate)))
+			   (critical-power-action 'hybrid-sleep)))
 		 )
 
            ;; This is the default list of services we

@@ -3,6 +3,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ai-code-onboarding-seen t)
+ '(ai-code-opencode-program "~/.local/bin/opencode")
  '(auth-source-save-behavior nil)
  '(custom-enabled-themes '(Spacemacs-ish))
  '(custom-safe-themes
@@ -19,15 +21,15 @@
  '(org-export-backends '(ascii beamer html icalendar latex odt))
  '(org-export-with-toc nil)
  '(package-selected-packages
-   '(## addressbook-bookmark aider avy bluetooth caps-lock corfu dmenu
-			     emms exwm exwm-modeline
-			     gnu-elpa-keyring-update gnuplot
-			     gnuplot-mode god-mode gptel iedit magit
-			     multiple-cursors org-ai org-modern
-			     org-present org-ref pdf-tools pinentry
-			     sudo-edit vertico visual-fill-column
-			     vterm which-key yasnippet zygospore))
- '(package-vc-selected-packages '((aider :url "https://github.com/tninja/aider.el"))))
+   '(## addressbook-bookmark ai-code aider avy bluetooth caps-lock corfu
+	dmenu emms exwm exwm-modeline gnu-elpa-keyring-update gnuplot
+	gnuplot-mode god-mode gptel iedit magit multiple-cursors
+	opencode org-ai org-modern org-present org-ref pdf-tools
+	pinentry sudo-edit vertico visual-fill-column vterm which-key
+	yasnippet zygospore))
+ '(package-vc-selected-packages
+   '((opencode :url "https://codeberg.org/sczi/opencode.el.git")
+     (aider :url "https://github.com/tninja/aider.el"))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
