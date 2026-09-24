@@ -13,7 +13,7 @@
 	     (nongnu packages linux)
 	     (nongnu system linux-initrd))
 (use-service-modules authentication cups desktop networking sound ssh xorg)
-(use-package-modules admin emacs emacs-xyz gnome imagemagick networking rsync ssh video xdisorg xorg linux commencement)
+(use-package-modules admin emacs emacs-xyz gnome imagemagick networking rsync ssh video xdisorg xorg linux commencement clojure)
 
 (operating-system
   (kernel linux)
@@ -44,6 +44,7 @@
 		   emacs-pdf-tools emacs-vterm emacs-sudo-edit emacs-avy emacs-god-mode
 		   emacs-magit emacs-iedit emacs-gnuplot emacs-dmenu emacs-pinentry emacs-caps-lock
 		   emacs-emms emacs-transmission emacs-paredit emacs-bluetooth emacs-agent-shell
+		   emacs-cider
 		   ;; not available/working
 		   ;emacs-exwm-modeline emacs-aider emacs-addressbook-bookmark emacs-zygospore
 		   iwd
@@ -56,6 +57,7 @@
 		   libva
 		   light
 		   gcc-toolchain
+		   clojure-tools
                    %base-packages))
 
   ;; Below is the list of system services.  To search for available

@@ -31,13 +31,20 @@
 (use-package gptel
   :config
   (setq gptel-default-mode 'org-mode)
-  (setq gptel-model 'deepseek-r1:1.5b)
+  (setq gptel-model 'deepseek-chat)
   (setq gptel-backend
-  (gptel-make-ollama
-   "Ollama"
-   :host "localhost:11434"
-   :models '("deepseek-r1" "deepseek-r1:1.5b""qwen2.5-coder:7b-instruct" "gemma2:latest" "gemma2:2b")
-   :stream t)))
+	(gptel-make-deepseek "DeepSeek"
+	:stream t
+	:key #'gptel-api-key-from-auth-source
+	:models '("deepseek-chat" "deepseek-reasoner")))
+  ;(gptel-make-ollama
+  ; "Ollama"
+  ; :host "localhost:11434"
+  ; :models '("deepseek-r1" "deepseek-r1:1.5b""qwen2.5-coder:7b-instruct" "gemma2:latest" "gemma2:2b")
+  ; :stream t)
+  )
+; ai pair programming with eca
+(use-package eca :ensure t)
 ; ai code assistance with aider.el - requires aider
 ;;(use-package aider ;:ensure t
 ;;  :config
@@ -50,9 +57,9 @@
 ;;  :config
 ;;  (ai-code-set-backend 'opencode))
 ; agent-shell - agnostic native ai agent
-(use-package agent-shell
-  :config
-  (add-to-list 'exec-path "~/.local/bin/"))
+;(use-package agent-shell
+;  :config
+;  (add-to-list 'exec-path "~/.local/bin/"))
 ;;;** multiple-cursors, which-key, vertico, corfu
 (use-package multiple-cursors)
 (use-package which-key
@@ -84,6 +91,7 @@
 (use-package addressbook-bookmark :ensure t)
 (use-package pinentry)
 (use-package caps-lock)
+(use-package cider)
 ;;;** emms
 (use-package emms
   :init
@@ -418,7 +426,7 @@
 (global-set-key (kbd "s-x") 'dmenu)
 (global-set-key (kbd "H-<escape>") #'god-local-mode)
 (global-set-key (kbd "H-c g") 'gptel)
-(global-set-key (kbd "H-c a") #'ai-code-menu) ;'opencode) ;'aider-transient-menu)
+(global-set-key (kbd "H-c a") 'eca) ;'aider-transient-menu)
 ;; multiple-cursors
 (global-set-key (kbd "C-. C-.") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)

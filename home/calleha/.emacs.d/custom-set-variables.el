@@ -21,8 +21,8 @@
  '(org-export-backends '(ascii beamer html icalendar latex odt))
  '(org-export-with-toc nil)
  '(package-selected-packages
-   '(## addressbook-bookmark ai-code aider avy bluetooth caps-lock corfu
-	dmenu emms exwm exwm-modeline gnu-elpa-keyring-update gnuplot
+   '(## addressbook-bookmark aider avy bluetooth caps-lock corfu dmenu
+	eca emms exwm exwm-modeline gnu-elpa-keyring-update gnuplot
 	gnuplot-mode god-mode gptel iedit magit multiple-cursors
 	opencode org-ai org-modern org-present org-ref pdf-tools
 	pinentry sudo-edit vertico visual-fill-column vterm which-key
