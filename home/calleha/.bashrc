@@ -30,6 +30,9 @@ fi
 # PATH
 PATH=$PATH:~/.local/bin
 
+# exports
+export LD_LIBRARY_PATH="/home/calleha/.guix-profile/lib:$LD_LIBRARY_PATH"
+
 # Aliases
 alias ls='ls -p --color=auto'
 alias ll='ls -l'

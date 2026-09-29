@@ -13,7 +13,7 @@
 	     (nongnu packages linux)
 	     (nongnu system linux-initrd))
 (use-service-modules authentication cups desktop networking sound ssh xorg)
-(use-package-modules admin emacs emacs-xyz gnome imagemagick networking rsync ssh video xdisorg xorg linux commencement clojure)
+(use-package-modules admin emacs emacs-xyz gnome imagemagick networking rsync ssh video xdisorg xorg linux commencement clojure tex lisp)
 
 (operating-system
   (kernel linux)
@@ -43,10 +43,12 @@
 		   emacs-gptel emacs-multiple-cursors emacs-which-key emacs-vertico emacs-corfu
 		   emacs-pdf-tools emacs-vterm emacs-sudo-edit emacs-avy emacs-god-mode
 		   emacs-magit emacs-iedit emacs-gnuplot emacs-dmenu emacs-pinentry emacs-caps-lock
-		   emacs-emms emacs-transmission emacs-paredit emacs-bluetooth emacs-agent-shell
-		   emacs-cider
+		   emacs-emms emacs-transmission emacs-paredit emacs-cider emacs-slime
+		   emacs-rainbow-delimiters
 		   ;; not available/working
 		   ;emacs-exwm-modeline emacs-aider emacs-addressbook-bookmark emacs-zygospore
+		   texlive-scheme-basic texlive-latex texlive-collection-latexrecommended
+		   texlive-wrapfig texlive-wrapfig texlive-ulem texlive-capt-of texlive-marvosym
 		   iwd
 		   xorg-server xset xrandr xmodmap setxkbmap xhost xsetroot xbacklight xdotool
 		   unclutter
@@ -58,6 +60,7 @@
 		   light
 		   gcc-toolchain
 		   clojure-tools
+		   sbcl
                    %base-packages))
 
   ;; Below is the list of system services.  To search for available
