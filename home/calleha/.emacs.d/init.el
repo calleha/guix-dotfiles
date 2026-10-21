@@ -425,6 +425,7 @@
 (global-set-key (kbd "C-<return>") 'vterm)
 (global-set-key (kbd "s-x") 'dmenu)
 (global-set-key (kbd "H-<escape>") #'god-local-mode)
+(global-set-key (kbd "H-c s") 'slime)
 (global-set-key (kbd "H-c g") 'gptel)
 (global-set-key (kbd "H-c a") 'eca) ;'aider-transient-menu)
 ;; multiple-cursors

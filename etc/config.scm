@@ -48,7 +48,7 @@
 		   ;; not available/working
 		   ;emacs-exwm-modeline emacs-aider emacs-addressbook-bookmark emacs-zygospore
 		   texlive-scheme-basic texlive-latex texlive-collection-latexrecommended
-		   texlive-wrapfig texlive-wrapfig texlive-ulem texlive-capt-of texlive-marvosym
+		   texlive-latexmk texlive-wrapfig texlive-ulem texlive-capt-of texlive-marvosym
 		   iwd
 		   xorg-server xset xrandr xmodmap setxkbmap xhost xsetroot xbacklight xdotool
 		   unclutter
